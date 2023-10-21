@@ -5,7 +5,6 @@ import db from '../firebase'; // Import your Firebase configuration
 function FirebaseTest() {
   const [count, setCount] = useState(0);
 
-  // Fetch the count from Firestore
   useEffect(() => {
     const fetchCount = async () => {
       try {
