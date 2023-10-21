@@ -1,8 +1,8 @@
 import  { useState, useEffect } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import db from '../firebase'; // Import your Firebase configuration
-
-function FirebaseTest() {
+import "./Clicker.css";
+function Clicker() {
   const [count, setCount] = useState("laster");
 
   useEffect(() => {
@@ -33,11 +33,11 @@ function FirebaseTest() {
   };
 
   return (
-    <div>
+    <div className="clicker">
       <p>Antall klikk: {count}</p>
       <button onClick={incrementCount}>Klikk</button>
     </div>
   );
 }
 
-export default FirebaseTest;
+export default Clicker;

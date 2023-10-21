@@ -1,11 +1,11 @@
 
 import './App.css'
-import FirebaseTest from '../components/FirebaseTest'
+import Clicker from '../components/Clicker'
 function App() {
 
   return (
     <>
-    <FirebaseTest/>
+    <Clicker/>
     </>
   )
 }
