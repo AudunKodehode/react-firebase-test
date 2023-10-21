@@ -3,7 +3,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import db from '../firebase'; // Import your Firebase configuration
 
 function FirebaseTest() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState("laster");
 
   useEffect(() => {
     const fetchCount = async () => {
@@ -34,8 +34,8 @@ function FirebaseTest() {
 
   return (
     <div>
-      <p>Count: {count}</p>
-      <button onClick={incrementCount}>Increment</button>
+      <p>Antall klikk: {count}</p>
+      <button onClick={incrementCount}>Klikk</button>
     </div>
   );
 }
