@@ -3,7 +3,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import db from '../firebase'; // Import your Firebase configuration
 import "./Clicker.css";
 function Clicker() {
-  const [count, setCount] = useState("laster");
+  const [count, setCount] = useState();
 
   useEffect(() => {
     const fetchCount = async () => {
