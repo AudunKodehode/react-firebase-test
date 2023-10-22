@@ -28,3 +28,13 @@ button {
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+  .newMessage{
+    width: 100%;
+  }
+  .newMessage input{
+    border-radius: 10px;
+    width: 80%;
+  }
+  .newMessage button{
+    width: 90px;
+  }
