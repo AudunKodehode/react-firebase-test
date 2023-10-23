@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Clicker/>
+    <Clicker header="Clicks" buttontext="Click"/>
     <Chat/>
     </>
   )

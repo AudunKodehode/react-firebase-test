@@ -3,7 +3,7 @@ import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import db from '../firebase'; // Import your Firebase configuration
 import './Clicker.css';
 
-function Clicker() {
+function Clicker(props) {
   const [count, setCount] = useState();
 
   // Reference to the single document
@@ -33,8 +33,8 @@ function Clicker() {
 
   return (
     <div className="clicker">
-      <p>Antall klikk: {count}</p>
-      <button onClick={incrementCount}>Klikk</button>
+      <h3>{props.header}: {count}</h3>
+      <button onClick={incrementCount}>{props.buttontext}</button>
     </div>
   );
 }
